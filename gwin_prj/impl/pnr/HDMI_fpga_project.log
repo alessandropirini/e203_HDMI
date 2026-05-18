@@ -1,0 +1,34 @@
+Reading netlist file: "/home/alessandro/Desktop/HDMI_fpga_project/impl/gwsynthesis/HDMI_fpga_project.vg"
+Parsing netlist file "/home/alessandro/Desktop/HDMI_fpga_project/impl/gwsynthesis/HDMI_fpga_project.vg" completed
+WARN  (PA1003) : Invalid parameterized value 'GW2A-55'(DEVICE) specified for instance 'clk_unit/pll_inst_rtc'
+WARN  (PA1003) : Invalid parameterized value 'GW2A-55'(DEVICE) specified for instance 'clk_unit/pll_inst_system'
+Processing netlist completed
+Reading constraint file: "/home/alessandro/Desktop/HDMI_fpga_project/src/HDMI_fpga_project.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+WARN  (TA1117) : Can't calculate clocks' relationship between: "clk_unit/pll_inst_rtc/CLKOUTD.default_gen_clk" and "clk_unit/pll_inst_system/CLKOUT.default_gen_clk"
+WARN  (TA1117) : Can't calculate clocks' relationship between: "clk_unit/pll_inst_system/CLKOUT.default_gen_clk" and "clk_unit/pll_inst_rtc/CLKOUTD.default_gen_clk"
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'tck_d' by the specified constraint. And then it may lead to the excessive delay or skew
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "/home/alessandro/Desktop/HDMI_fpga_project/impl/pnr/HDMI_fpga_project.power.html" completed
+Generate file "/home/alessandro/Desktop/HDMI_fpga_project/impl/pnr/HDMI_fpga_project.pin.html" completed
+Generate file "/home/alessandro/Desktop/HDMI_fpga_project/impl/pnr/HDMI_fpga_project.rpt.html" completed
+Generate file "/home/alessandro/Desktop/HDMI_fpga_project/impl/pnr/HDMI_fpga_project.rpt.txt" completed
+Generate file "/home/alessandro/Desktop/HDMI_fpga_project/impl/pnr/HDMI_fpga_project.tr.html" completed
+Thu Jun 20 12:21:27 2024
+

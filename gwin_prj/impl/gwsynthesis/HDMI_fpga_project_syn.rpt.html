@@ -1,0 +1,2476 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>synthesis Report</title>
+<style type="text/css">
+body { font-family: Verdana, Arial, sans-serif; font-size: 12px; }
+div#main_wrapper{ width: 100%; }
+div#content { margin-left: 350px; margin-right: 30px; }
+div#catalog_wrapper {position: fixed; top: 30px; width: 350px; float: left; }
+div#catalog ul { list-style-type: none; }
+div#catalog li { text-align: left; list-style-type:circle; color: #0084ff; margin-top: 3px; margin-bottom: 3px; }
+div#catalog a { display:inline-block; text-decoration: none; color: #0084ff; font-weight: bold; padding: 3px; }
+div#catalog a:visited { color: #0084ff; }
+div#catalog a:hover { color: #fff; background: #0084ff; }
+hr { margin-top: 30px; margin-bottom: 30px; }
+h1, h3 { text-align: center; }
+h1 {margin-top: 50px; }
+table, th, td { border: 1px solid #aaa; }
+table { border-collapse:collapse; margin-top: 10px; margin-bottom: 20px; width: 100%; }
+th, td { padding: 5px 5px 5px 5px; }
+th { color: #fff; font-weight: bold; background-color: #0084ff; }
+table.summary_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.detail_table td.label { min-width: 100px; width: 8%;}
+</style>
+</head>
+<body>
+<div id="main_wrapper">
+<div id="catalog_wrapper">
+<div id="catalog">
+<ul>
+<li><a href="#about" style=" font-size: 16px;">Synthesis Messages</a></li>
+<li><a href="#summary" style=" font-size: 16px;">Synthesis Details</a></li>
+<li><a href="#resource" style=" font-size: 16px;">Resource</a>
+<ul>
+<li><a href="#usage" style=" font-size: 14px;">Resource Usage Summary</a></li>
+<li><a href="#utilization" style=" font-size: 14px;">Resource Utilization Summary</a></li>
+</ul>
+</li>
+<li><a href="#timing" style=" font-size: 16px;">Timing</a>
+<ul>
+<li><a href="#clock" style=" font-size: 14px;">Clock Summary</a></li>
+<li><a href="#performance" style=" font-size: 14px;">Max Frequency Summary</a></li>
+<li><a href="#detail timing" style=" font-size: 14px;">Detail Timing Paths Informations</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- catalog -->
+</div><!-- catalog_wrapper -->
+<div id="content">
+<h1><a name="about">Synthesis Messages</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Report Title</td>
+<td>GowinSynthesis Report</td>
+</tr>
+<tr>
+<td class="label">Design File</td>
+<td>/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/config.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_biu.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_clk_ctrl.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_clk_unit.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_clkgate.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_core.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_cpu.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_cpu_top.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_defines.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_dtcm_ctrl.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_dtcm_ram.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_extend_csr.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_exu.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_exu_alu.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_exu_alu_bjp.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_exu_alu_csrctrl.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_exu_alu_dpath.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_exu_alu_lsuagu.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_exu_alu_muldiv.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_exu_alu_rglr.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_exu_branchslv.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_exu_commit.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_exu_csr.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_exu_decode.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_exu_disp.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_exu_excp.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_exu_longpwbck.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_exu_oitf.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_exu_regfile.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_exu_wbck.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_ifu.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_ifu_ifetch.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_ifu_ift2icb.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_ifu_litebpu.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_ifu_minidec.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_irq_sync.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_itcm_ctrl.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_itcm_ram.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_lsu.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_lsu_ctrl.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_reset_ctrl.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_soc_demo.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_soc_top.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_srams.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_subsys_clint.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_subsys_gfcm.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_subsys_hclkgen.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_subsys_hclkgen_rstsync.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_subsys_main.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_subsys_mems.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_subsys_perips.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_subsys_plic.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_subsys_pll.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_subsys_pllclkdiv.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/e203_subsys_top.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/i2c_master_bit_ctrl.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/i2c_master_byte_ctrl.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/i2c_master_defines.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/i2c_master_top.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_1cyc_sram_ctrl.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_AsyncResetReg.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_AsyncResetRegVec.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_AsyncResetRegVec_1.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_AsyncResetRegVec_129.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_AsyncResetRegVec_36.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_AsyncResetRegVec_67.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_DeglitchShiftRegister.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_LevelGateway.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_ResetCatchAndSync.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_ResetCatchAndSync_2.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_aon.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_aon_lclkgen_regs.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_aon_porrst.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_aon_top.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_aon_wrapper.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_clint.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_clint_top.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_debug_csr.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_debug_module.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_debug_ram.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_debug_rom.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_expl_apb_slv.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_expl_axi_slv.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_flash_qspi.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_flash_qspi_top.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_gnrl_bufs.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_gnrl_dffs.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_gnrl_icbs.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_gnrl_ram.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_gnrl_xchecker.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_gpio.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_gpio_top.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_hclkgen_regs.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_icb1to16_bus.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_icb1to2_bus.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_icb1to8_bus.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_jtag_dtm.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_jtaggpioport.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_mrom.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_mrom_top.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_otp_top.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_plic_man.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_plic_top.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_pmu.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_pmu_core.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_pwm16.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_pwm16_core.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_pwm16_top.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_pwm8.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_pwm8_core.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_pwm8_top.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_pwmgpioport.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_qspi_1cs.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_qspi_1cs_top.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_qspi_4cs.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_qspi_4cs_top.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_qspi_arbiter.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_qspi_fifo.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_qspi_media.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_qspi_media_1.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_qspi_media_2.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_qspi_physical.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_qspi_physical_1.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_qspi_physical_2.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_queue.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_queue_1.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_repeater_6.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_rtc.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_sim_ram.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_spi_flashmap.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_spigpioport.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_spigpioport_1.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_spigpioport_2.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_sram_icb_ctrl.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_tl_repeater_5.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_tlfragmenter_qspi_1.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_tlwidthwidget_qspi.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_uart.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_uart_top.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_uartgpioport.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_uartrx.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_uarttx.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/core/sirv_wdog.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/ip/my_ip/HDMI.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/ip/my_ip/address_gen.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/ip/my_ip/dvi_tx/TMDS_rPLL.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/ip/my_ip/dvi_tx/dvi_tx.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/ip/my_ip/dvi_tx/temp/DviTx/dvi_tx_defines.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/ip/my_ip/dvi_tx/temp/DviTx/top_define.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/ip/my_ip/final.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/ip/my_ip/gowin_clkdiv/gowin_clkdiv.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/ip/my_ip/gowin_dpb.v<br>
+/home/alessandro/Desktop/verilog/final_project/vscode/e203_HDMI/rtl/ip/my_ip/icb_bus_HDMI.v<br>
+</td>
+</tr>
+<tr>
+<td class="label">GowinSynthesis Constraints File</td>
+<td>---</td>
+</tr>
+<tr>
+<td class="label">Version</td>
+<td>V1.9.9 Beta-4 Education</td>
+</tr>
+<tr>
+<td class="label">Part Number</td>
+<td>GW2A-LV18PG256C8/I7</td>
+</tr>
+<tr>
+<td class="label">Device</td>
+<td>GW2A-18</td>
+</tr>
+<tr>
+<td class="label">Device Version</td>
+<td>C</td>
+</tr>
+<tr>
+<td class="label">Created Time</td>
+<td>Thu Jun 20 12:11:03 2024
+</td>
+</tr>
+<tr>
+<td class="label">Legal Announcement</td>
+<td>Copyright (C)2014-2023 Gowin Semiconductor Corporation. ALL rights reserved.</td>
+</tr>
+</table>
+<h1><a name="summary">Synthesis Details</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Top Level Module</td>
+<td>e203_soc_demo</td>
+</tr>
+<tr>
+<td class="label">Synthesis Process</td>
+<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 1m 11s, Elapsed time = 0h 1m 17s, Peak memory usage = 650.961MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 17s, Elapsed time = 0h 0m 17s, Peak memory usage = 650.961MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s, Peak memory usage = 650.961MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 19s, Elapsed time = 0h 0m 19s, Peak memory usage = 650.961MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 11s, Elapsed time = 0h 0m 10s, Peak memory usage = 650.961MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0.77s, Elapsed time = 0h 0m 0.734s, Peak memory usage = 650.961MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0.966s, Elapsed time = 0h 0m 0.938s, Peak memory usage = 650.961MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0.397s, Elapsed time = 0h 0m 0.37s, Peak memory usage = 650.961MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 13s, Elapsed time = 0h 0m 13s, Peak memory usage = 650.961MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s, Peak memory usage = 650.961MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s, Peak memory usage = 650.961MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 11m 5s, Elapsed time = 0h 10m 45s, Peak memory usage = 650.961MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 10s, Elapsed time = 0h 0m 10s, Peak memory usage = 650.961MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 14s, Elapsed time = 0h 0m 13s, Peak memory usage = 652.395MB<br/></td>
+</tr>
+<tr>
+<td class="label">Total Time and Memory Usage</td>
+<td>CPU time = 0h 13m 51s, Elapsed time = 0h 13m 35s, Peak memory usage = 652.395MB</td>
+</tr>
+</table>
+<h1><a name="resource">Resource</a></h1>
+<h2><a name="usage">Resource Usage Summary</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label"><b>Resource</b></td>
+<td><b>Usage</b></td>
+</tr>
+<tr>
+<td class="label"><b>I/O Port </b></td>
+<td>95</td>
+</tr>
+<tr>
+<td class="label"><b>I/O Buf </b></td>
+<td>82</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIBUF</td>
+<td>37</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOBUF</td>
+<td>35</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspTBUF</td>
+<td>6</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspTLVDS_OBUF</td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label"><b>Register </b></td>
+<td>4674</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFF</td>
+<td>194</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFE</td>
+<td>1890</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFR</td>
+<td>34</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFRE</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFP</td>
+<td>10</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFPE</td>
+<td>110</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFC</td>
+<td>431</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFCE</td>
+<td>2003</td>
+</tr>
+<tr>
+<td class="label"><b>LUT </b></td>
+<td>9816</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT2</td>
+<td>966</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT3</td>
+<td>3448</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT4</td>
+<td>5400</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT5</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label"><b>MUX </b></td>
+<td>95</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspMUX2</td>
+<td>95</td>
+</tr>
+<tr>
+<td class="label"><b>ALU </b></td>
+<td>512</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspALU</td>
+<td>512</td>
+</tr>
+<tr>
+<td class="label"><b>SSRAM </b></td>
+<td>5</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspRAM16S1</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspRAM16SDP4</td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label"><b>INV </b></td>
+<td>20</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspINV</td>
+<td>20</td>
+</tr>
+<tr>
+<td class="label"><b>IOLOGIC </b></td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOSER10</td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label"><b>BSRAM </b></td>
+<td>36</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspSP</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspSDPB</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDPB</td>
+<td>10</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDPX9B</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsppROM</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label"><b>CLOCK </b></td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspPLL</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspCLKDIV</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsprPLL</td>
+<td>1</td>
+</tr>
+</table>
+<h2><a name="utilization">Resource Utilization Summary</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label"><b>Resource</b></td>
+<td><b>Usage</b></td>
+<td><b>Utilization</b></td>
+</tr>
+<tr>
+<td class="label">Logic</td>
+<td>10475(9933 LUT, 512 ALU, 5 RAM16) / 20736</td>
+<td>51%</td>
+</tr>
+<tr>
+<td class="label">Register</td>
+<td>4674 / 16173</td>
+<td>29%</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp--Register as Latch</td>
+<td>0 / 16173</td>
+<td>0%</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp--Register as FF</td>
+<td>4674 / 16173</td>
+<td>29%</td>
+</tr>
+<tr>
+<td class="label">BSRAM</td>
+<td>36 / 46</td>
+<td>79%</td>
+</tr>
+</table>
+<h1><a name="timing">Timing</a></h1>
+<h2><a name="clock">Clock Summary:</a></h2>
+<table class="summary_table">
+<tr>
+<th>Clock Name</th>
+<th>Type</th>
+<th>Period</th>
+<th>Frequency(MHz)</th>
+<th>Rise</th>
+<th>Fall</th>
+<th>Source</th>
+<th>Master</th>
+<th>Object</th>
+</tr>
+<tr>
+<td>clk_in</td>
+<td>Base</td>
+<td>37.037</td>
+<td>27.0</td>
+<td>0.000</td>
+<td>18.519</td>
+<td> </td>
+<td> </td>
+<td>clk_in_ibuf/I </td>
+</tr>
+<tr>
+<td>tck</td>
+<td>Base</td>
+<td>10.000</td>
+<td>100.0</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td>tck_ibuf/I </td>
+</tr>
+<tr>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/clk_int_3</td>
+<td>Base</td>
+<td>10.000</td>
+<td>100.0</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/clk_int_s0/Q </td>
+</tr>
+<tr>
+<td>e203_soc_ins/u_e203_subsys_top/u_sirv_debug_module/jtag_dtm_gen.u_sirv_jtag_dtm/n637_6</td>
+<td>Base</td>
+<td>10.000</td>
+<td>100.0</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td>e203_soc_ins/u_e203_subsys_top/u_sirv_debug_module/jtag_dtm_gen.u_sirv_jtag_dtm/n637_s2/O </td>
+</tr>
+<tr>
+<td>n7_6</td>
+<td>Base</td>
+<td>10.000</td>
+<td>100.0</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td>n7_s2/O </td>
+</tr>
+<tr>
+<td>clk_unit/pll_inst_rtc/CLKOUTD.default_gen_clk</td>
+<td>Generated</td>
+<td>28444.445</td>
+<td>0.0</td>
+<td>0.000</td>
+<td>14222.223</td>
+<td>clk_in_ibuf/I</td>
+<td>clk_in</td>
+<td>clk_unit/pll_inst_rtc/CLKOUTD </td>
+</tr>
+<tr>
+<td>clk_unit/pll_inst_system/CLKOUT.default_gen_clk</td>
+<td>Generated</td>
+<td>55.556</td>
+<td>18.0</td>
+<td>0.000</td>
+<td>27.778</td>
+<td>clk_in_ibuf/I</td>
+<td>clk_in</td>
+<td>clk_unit/pll_inst_system/CLKOUT </td>
+</tr>
+<tr>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/u_tmds_rpll/rpll_inst/CLKOUT.default_gen_clk</td>
+<td>Generated</td>
+<td>2.694</td>
+<td>371.3</td>
+<td>0.000</td>
+<td>1.347</td>
+<td>clk_in_ibuf/I</td>
+<td>clk_in</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/u_tmds_rpll/rpll_inst/CLKOUT </td>
+</tr>
+<tr>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/instance_name/clkdiv_inst/CLKOUT.default_gen_clk</td>
+<td>Generated</td>
+<td>13.468</td>
+<td>74.2</td>
+<td>0.000</td>
+<td>6.734</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/u_tmds_rpll/rpll_inst/CLKOUT</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/u_tmds_rpll/rpll_inst/CLKOUT.default_gen_clk</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/instance_name/clkdiv_inst/CLKOUT </td>
+</tr>
+</table>
+<h2><a name="performance">Max Frequency Summary:</a></h2>
+<table class="summary_table">
+<tr>
+<th>No.</th>
+<th>Clock Name</th>
+<th>Constraint</th>
+<th>Actual Fmax</th>
+<th>Logic Level</th>
+<th>Entity</th>
+</tr>
+<tr>
+<td>1</td>
+<td>clk_in</td>
+<td>27.0(MHz)</td>
+<td>75.0(MHz)</td>
+<td>19</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>2</td>
+<td>tck</td>
+<td>100.0(MHz)</td>
+<td>241.5(MHz)</td>
+<td>6</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>3</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/clk_int_3</td>
+<td>100.0(MHz)</td>
+<td>241.8(MHz)</td>
+<td>6</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>4</td>
+<td>n7_6</td>
+<td>100.0(MHz)</td>
+<td>794.9(MHz)</td>
+<td>2</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>5</td>
+<td>clk_unit/pll_inst_rtc/CLKOUTD.default_gen_clk</td>
+<td>0.0(MHz)</td>
+<td>771.1(MHz)</td>
+<td>2</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>6</td>
+<td>clk_unit/pll_inst_system/CLKOUT.default_gen_clk</td>
+<td>18.0(MHz)</td>
+<td>38.1(MHz)</td>
+<td>40</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>7</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/instance_name/clkdiv_inst/CLKOUT.default_gen_clk</td>
+<td>74.2(MHz)</td>
+<td>110.0(MHz)</td>
+<td>13</td>
+<td>TOP</td>
+</tr>
+</table>
+<h2><a name="detail timing">Detail Timing Paths Information</a></h2>
+<h3>Path&nbsp1</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-8.250</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>48.935</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>40.685</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/dff_inst_7</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_b/sel_xnor_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>clk_in[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/instance_name/clkdiv_inst/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>37.037</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>clk_in</td>
+</tr>
+<tr>
+<td>37.037</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>clk_in_ibuf/I</td>
+</tr>
+<tr>
+<td>37.720</td>
+<td>0.683</td>
+<td>tINS</td>
+<td>RR</td>
+<td>137</td>
+<td>clk_in_ibuf/O</td>
+</tr>
+<tr>
+<td>37.900</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/dff_inst_7/CLK</td>
+</tr>
+<tr>
+<td>38.132</td>
+<td>0.232</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>52</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/dff_inst_7/Q</td>
+</tr>
+<tr>
+<td>38.369</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/mux_inst_314/S0</td>
+</tr>
+<tr>
+<td>38.822</td>
+<td>0.453</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/mux_inst_314/O</td>
+</tr>
+<tr>
+<td>39.059</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/mux_inst_317/I1</td>
+</tr>
+<tr>
+<td>39.614</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/mux_inst_317/O</td>
+</tr>
+<tr>
+<td>39.851</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/mux_inst_319/I1</td>
+</tr>
+<tr>
+<td>40.406</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/mux_inst_319/O</td>
+</tr>
+<tr>
+<td>40.643</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/mux_inst_321/I0</td>
+</tr>
+<tr>
+<td>41.160</td>
+<td>0.517</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/mux_inst_321/O</td>
+</tr>
+<tr>
+<td>41.397</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/pixel_s58/I1</td>
+</tr>
+<tr>
+<td>41.952</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/pixel_s58/F</td>
+</tr>
+<tr>
+<td>42.189</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/pixel_s51/I0</td>
+</tr>
+<tr>
+<td>42.292</td>
+<td>0.103</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/pixel_s51/O</td>
+</tr>
+<tr>
+<td>42.529</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/pixel_s47/I1</td>
+</tr>
+<tr>
+<td>42.632</td>
+<td>0.103</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/pixel_s47/O</td>
+</tr>
+<tr>
+<td>42.869</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/pixel_s31/I1</td>
+</tr>
+<tr>
+<td>42.972</td>
+<td>0.103</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/pixel_s31/O</td>
+</tr>
+<tr>
+<td>43.209</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/Blue_7_s1/I0</td>
+</tr>
+<tr>
+<td>43.726</td>
+<td>0.517</td>
+<td>tINS</td>
+<td>FF</td>
+<td>3</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/Blue_7_s1/F</td>
+</tr>
+<tr>
+<td>43.963</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/Blue_7_s0/I2</td>
+</tr>
+<tr>
+<td>44.416</td>
+<td>0.453</td>
+<td>tINS</td>
+<td>FF</td>
+<td>29</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/Blue_7_s0/F</td>
+</tr>
+<tr>
+<td>44.653</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_b/n114_s8/I1</td>
+</tr>
+<tr>
+<td>45.208</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_b/n114_s8/F</td>
+</tr>
+<tr>
+<td>45.445</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_b/n114_s6/I1</td>
+</tr>
+<tr>
+<td>46.000</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_b/n114_s6/F</td>
+</tr>
+<tr>
+<td>46.237</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_b/n114_s5/I2</td>
+</tr>
+<tr>
+<td>46.690</td>
+<td>0.453</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_b/n114_s5/F</td>
+</tr>
+<tr>
+<td>46.927</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_b/n114_s2/I1</td>
+</tr>
+<tr>
+<td>47.482</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_b/n114_s2/F</td>
+</tr>
+<tr>
+<td>47.719</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_b/n114_s3/I3</td>
+</tr>
+<tr>
+<td>48.090</td>
+<td>0.371</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_b/n114_s3/F</td>
+</tr>
+<tr>
+<td>48.327</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_b/n114_s0/I3</td>
+</tr>
+<tr>
+<td>48.698</td>
+<td>0.371</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_b/n114_s0/F</td>
+</tr>
+<tr>
+<td>48.935</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_b/sel_xnor_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>40.404</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/instance_name/clkdiv_inst/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>40.575</td>
+<td>0.170</td>
+<td>tCL</td>
+<td>RR</td>
+<td>144</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/instance_name/clkdiv_inst/CLKOUT</td>
+</tr>
+<tr>
+<td>40.755</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_b/sel_xnor_s0/CLK</td>
+</tr>
+<tr>
+<td>40.720</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_b/sel_xnor_s0</td>
+</tr>
+<tr>
+<td>40.685</td>
+<td>-0.035</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_b/sel_xnor_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>-0.512</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>3.367</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>15</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.683, 79.130%; route: 0.180, 20.870%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 6.774, 61.387%; route: 4.029, 36.511%; tC2Q: 0.232, 2.102%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.683, 79.130%; route: 0.180, 20.870%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp2</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-8.250</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>48.935</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>40.685</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/dff_inst_7</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_g/sel_xnor_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>clk_in[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/instance_name/clkdiv_inst/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>37.037</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>clk_in</td>
+</tr>
+<tr>
+<td>37.037</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>clk_in_ibuf/I</td>
+</tr>
+<tr>
+<td>37.720</td>
+<td>0.683</td>
+<td>tINS</td>
+<td>RR</td>
+<td>137</td>
+<td>clk_in_ibuf/O</td>
+</tr>
+<tr>
+<td>37.900</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/dff_inst_7/CLK</td>
+</tr>
+<tr>
+<td>38.132</td>
+<td>0.232</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>52</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/dff_inst_7/Q</td>
+</tr>
+<tr>
+<td>38.369</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/mux_inst_314/S0</td>
+</tr>
+<tr>
+<td>38.822</td>
+<td>0.453</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/mux_inst_314/O</td>
+</tr>
+<tr>
+<td>39.059</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/mux_inst_317/I1</td>
+</tr>
+<tr>
+<td>39.614</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/mux_inst_317/O</td>
+</tr>
+<tr>
+<td>39.851</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/mux_inst_319/I1</td>
+</tr>
+<tr>
+<td>40.406</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/mux_inst_319/O</td>
+</tr>
+<tr>
+<td>40.643</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/mux_inst_321/I0</td>
+</tr>
+<tr>
+<td>41.160</td>
+<td>0.517</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/mux_inst_321/O</td>
+</tr>
+<tr>
+<td>41.397</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/pixel_s58/I1</td>
+</tr>
+<tr>
+<td>41.952</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/pixel_s58/F</td>
+</tr>
+<tr>
+<td>42.189</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/pixel_s51/I0</td>
+</tr>
+<tr>
+<td>42.292</td>
+<td>0.103</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/pixel_s51/O</td>
+</tr>
+<tr>
+<td>42.529</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/pixel_s47/I1</td>
+</tr>
+<tr>
+<td>42.632</td>
+<td>0.103</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/pixel_s47/O</td>
+</tr>
+<tr>
+<td>42.869</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/pixel_s31/I1</td>
+</tr>
+<tr>
+<td>42.972</td>
+<td>0.103</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/pixel_s31/O</td>
+</tr>
+<tr>
+<td>43.209</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/Blue_7_s1/I0</td>
+</tr>
+<tr>
+<td>43.726</td>
+<td>0.517</td>
+<td>tINS</td>
+<td>FF</td>
+<td>3</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/Blue_7_s1/F</td>
+</tr>
+<tr>
+<td>43.963</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/Green_7_s0/I2</td>
+</tr>
+<tr>
+<td>44.416</td>
+<td>0.453</td>
+<td>tINS</td>
+<td>FF</td>
+<td>29</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/Green_7_s0/F</td>
+</tr>
+<tr>
+<td>44.653</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_g/n114_s8/I1</td>
+</tr>
+<tr>
+<td>45.208</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_g/n114_s8/F</td>
+</tr>
+<tr>
+<td>45.445</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_g/n114_s6/I1</td>
+</tr>
+<tr>
+<td>46.000</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_g/n114_s6/F</td>
+</tr>
+<tr>
+<td>46.237</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_g/n114_s5/I2</td>
+</tr>
+<tr>
+<td>46.690</td>
+<td>0.453</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_g/n114_s5/F</td>
+</tr>
+<tr>
+<td>46.927</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_g/n114_s2/I1</td>
+</tr>
+<tr>
+<td>47.482</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_g/n114_s2/F</td>
+</tr>
+<tr>
+<td>47.719</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_g/n114_s3/I3</td>
+</tr>
+<tr>
+<td>48.090</td>
+<td>0.371</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_g/n114_s3/F</td>
+</tr>
+<tr>
+<td>48.327</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_g/n114_s0/I3</td>
+</tr>
+<tr>
+<td>48.698</td>
+<td>0.371</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_g/n114_s0/F</td>
+</tr>
+<tr>
+<td>48.935</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_g/sel_xnor_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>40.404</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/instance_name/clkdiv_inst/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>40.575</td>
+<td>0.170</td>
+<td>tCL</td>
+<td>RR</td>
+<td>144</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/instance_name/clkdiv_inst/CLKOUT</td>
+</tr>
+<tr>
+<td>40.755</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_g/sel_xnor_s0/CLK</td>
+</tr>
+<tr>
+<td>40.720</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_g/sel_xnor_s0</td>
+</tr>
+<tr>
+<td>40.685</td>
+<td>-0.035</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_g/sel_xnor_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>-0.512</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>3.367</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>15</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.683, 79.130%; route: 0.180, 20.870%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 6.774, 61.387%; route: 4.029, 36.511%; tC2Q: 0.232, 2.102%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.683, 79.130%; route: 0.180, 20.870%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp3</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-8.130</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>48.815</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>40.685</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/dff_inst_7</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_r/sel_xnor_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>clk_in[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/instance_name/clkdiv_inst/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>37.037</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>clk_in</td>
+</tr>
+<tr>
+<td>37.037</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>clk_in_ibuf/I</td>
+</tr>
+<tr>
+<td>37.720</td>
+<td>0.683</td>
+<td>tINS</td>
+<td>RR</td>
+<td>137</td>
+<td>clk_in_ibuf/O</td>
+</tr>
+<tr>
+<td>37.900</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/dff_inst_7/CLK</td>
+</tr>
+<tr>
+<td>38.132</td>
+<td>0.232</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>52</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/dff_inst_7/Q</td>
+</tr>
+<tr>
+<td>38.369</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/mux_inst_314/S0</td>
+</tr>
+<tr>
+<td>38.822</td>
+<td>0.453</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/mux_inst_314/O</td>
+</tr>
+<tr>
+<td>39.059</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/mux_inst_317/I1</td>
+</tr>
+<tr>
+<td>39.614</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/mux_inst_317/O</td>
+</tr>
+<tr>
+<td>39.851</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/mux_inst_319/I1</td>
+</tr>
+<tr>
+<td>40.406</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/mux_inst_319/O</td>
+</tr>
+<tr>
+<td>40.643</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/mux_inst_321/I0</td>
+</tr>
+<tr>
+<td>41.160</td>
+<td>0.517</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/dpram_instance/mux_inst_321/O</td>
+</tr>
+<tr>
+<td>41.397</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/pixel_s58/I1</td>
+</tr>
+<tr>
+<td>41.952</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/pixel_s58/F</td>
+</tr>
+<tr>
+<td>42.189</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/pixel_s51/I0</td>
+</tr>
+<tr>
+<td>42.292</td>
+<td>0.103</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/pixel_s51/O</td>
+</tr>
+<tr>
+<td>42.529</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/pixel_s47/I1</td>
+</tr>
+<tr>
+<td>42.632</td>
+<td>0.103</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/pixel_s47/O</td>
+</tr>
+<tr>
+<td>42.869</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/pixel_s31/I1</td>
+</tr>
+<tr>
+<td>42.972</td>
+<td>0.103</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/pixel_s31/O</td>
+</tr>
+<tr>
+<td>43.209</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/Blue_7_s1/I0</td>
+</tr>
+<tr>
+<td>43.726</td>
+<td>0.517</td>
+<td>tINS</td>
+<td>FF</td>
+<td>3</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/Blue_7_s1/F</td>
+</tr>
+<tr>
+<td>43.963</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/Red_7_s0/I2</td>
+</tr>
+<tr>
+<td>44.416</td>
+<td>0.453</td>
+<td>tINS</td>
+<td>FF</td>
+<td>32</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/Red_7_s0/F</td>
+</tr>
+<tr>
+<td>44.653</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_r/n114_s9/I1</td>
+</tr>
+<tr>
+<td>45.208</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_r/n114_s9/F</td>
+</tr>
+<tr>
+<td>45.445</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_r/n114_s8/I1</td>
+</tr>
+<tr>
+<td>46.000</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_r/n114_s8/F</td>
+</tr>
+<tr>
+<td>46.237</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_r/n114_s10/I3</td>
+</tr>
+<tr>
+<td>46.608</td>
+<td>0.371</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_r/n114_s10/F</td>
+</tr>
+<tr>
+<td>46.845</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_r/n114_s2/I0</td>
+</tr>
+<tr>
+<td>47.362</td>
+<td>0.517</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_r/n114_s2/F</td>
+</tr>
+<tr>
+<td>47.599</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_r/n114_s3/I3</td>
+</tr>
+<tr>
+<td>47.970</td>
+<td>0.371</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_r/n114_s3/F</td>
+</tr>
+<tr>
+<td>48.207</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_r/n114_s0/I3</td>
+</tr>
+<tr>
+<td>48.578</td>
+<td>0.371</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_r/n114_s0/F</td>
+</tr>
+<tr>
+<td>48.815</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_r/sel_xnor_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>40.404</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/instance_name/clkdiv_inst/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>40.575</td>
+<td>0.170</td>
+<td>tCL</td>
+<td>RR</td>
+<td>144</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/instance_name/clkdiv_inst/CLKOUT</td>
+</tr>
+<tr>
+<td>40.755</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_r/sel_xnor_s0/CLK</td>
+</tr>
+<tr>
+<td>40.720</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_r/sel_xnor_s0</td>
+</tr>
+<tr>
+<td>40.685</td>
+<td>-0.035</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/your_instance_name/rgb2dvi_inst/TMDS8b10b_inst_r/sel_xnor_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>-0.512</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>3.367</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>15</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.683, 79.130%; route: 0.180, 20.870%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 6.654, 60.961%; route: 4.029, 36.913%; tC2Q: 0.232, 2.126%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.683, 79.130%; route: 0.180, 20.870%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp4</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-6.748</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>2336.858</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>2330.110</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/V_cnt_2_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_ROWS_DISP_0_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/instance_name/clkdiv_inst/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/clk_int_3[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>2329.966</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/instance_name/clkdiv_inst/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>2330.137</td>
+<td>0.170</td>
+<td>tCL</td>
+<td>RR</td>
+<td>144</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/instance_name/clkdiv_inst/CLKOUT</td>
+</tr>
+<tr>
+<td>2330.317</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/V_cnt_2_s0/CLK</td>
+</tr>
+<tr>
+<td>2330.549</td>
+<td>0.232</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>6</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/V_cnt_2_s0/Q</td>
+</tr>
+<tr>
+<td>2330.786</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/n111_s1/I1</td>
+</tr>
+<tr>
+<td>2331.341</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>3</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/n111_s1/F</td>
+</tr>
+<tr>
+<td>2331.578</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_bits_5_s5/I1</td>
+</tr>
+<tr>
+<td>2332.133</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_bits_5_s5/F</td>
+</tr>
+<tr>
+<td>2332.370</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_bits_5_s3/I0</td>
+</tr>
+<tr>
+<td>2332.887</td>
+<td>0.517</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_bits_5_s3/F</td>
+</tr>
+<tr>
+<td>2333.124</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_bits_5_s8/I1</td>
+</tr>
+<tr>
+<td>2333.679</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>5</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_bits_5_s8/F</td>
+</tr>
+<tr>
+<td>2333.916</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/n1072_s2/I1</td>
+</tr>
+<tr>
+<td>2334.471</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/n1072_s2/F</td>
+</tr>
+<tr>
+<td>2334.708</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/n1072_s0/I3</td>
+</tr>
+<tr>
+<td>2335.079</td>
+<td>0.371</td>
+<td>tINS</td>
+<td>FF</td>
+<td>3</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/n1072_s0/F</td>
+</tr>
+<tr>
+<td>2335.316</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_regs_5_s4/I1</td>
+</tr>
+<tr>
+<td>2335.871</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>4</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_regs_5_s4/F</td>
+</tr>
+<tr>
+<td>2336.108</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_ROWS_DISP_5_s2/I1</td>
+</tr>
+<tr>
+<td>2336.678</td>
+<td>0.570</td>
+<td>tINS</td>
+<td>FR</td>
+<td>5</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_ROWS_DISP_5_s2/F</td>
+</tr>
+<tr>
+<td>2336.858</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_ROWS_DISP_0_s0/CE</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>2330.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/clk_int_3</td>
+</tr>
+<tr>
+<td>2330.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>25</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/clk_int_s0/Q</td>
+</tr>
+<tr>
+<td>2330.180</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_ROWS_DISP_0_s0/CLK</td>
+</tr>
+<tr>
+<td>2330.145</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_ROWS_DISP_0_s0</td>
+</tr>
+<tr>
+<td>2330.110</td>
+<td>-0.035</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_ROWS_DISP_0_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>-0.170</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.034</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>9</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.180, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 4.233, 64.715%; route: 2.076, 31.738%; tC2Q: 0.232, 3.547%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.180, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp5</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-6.748</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>2336.858</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>2330.110</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/V_cnt_2_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_ROWS_DISP_1_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/instance_name/clkdiv_inst/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/clk_int_3[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>2329.966</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/instance_name/clkdiv_inst/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>2330.137</td>
+<td>0.170</td>
+<td>tCL</td>
+<td>RR</td>
+<td>144</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/instance_name/clkdiv_inst/CLKOUT</td>
+</tr>
+<tr>
+<td>2330.317</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/V_cnt_2_s0/CLK</td>
+</tr>
+<tr>
+<td>2330.549</td>
+<td>0.232</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>6</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/V_cnt_2_s0/Q</td>
+</tr>
+<tr>
+<td>2330.786</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/n111_s1/I1</td>
+</tr>
+<tr>
+<td>2331.341</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>3</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/n111_s1/F</td>
+</tr>
+<tr>
+<td>2331.578</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_bits_5_s5/I1</td>
+</tr>
+<tr>
+<td>2332.133</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_bits_5_s5/F</td>
+</tr>
+<tr>
+<td>2332.370</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_bits_5_s3/I0</td>
+</tr>
+<tr>
+<td>2332.887</td>
+<td>0.517</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_bits_5_s3/F</td>
+</tr>
+<tr>
+<td>2333.124</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_bits_5_s8/I1</td>
+</tr>
+<tr>
+<td>2333.679</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>5</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_bits_5_s8/F</td>
+</tr>
+<tr>
+<td>2333.916</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/n1072_s2/I1</td>
+</tr>
+<tr>
+<td>2334.471</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/n1072_s2/F</td>
+</tr>
+<tr>
+<td>2334.708</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/n1072_s0/I3</td>
+</tr>
+<tr>
+<td>2335.079</td>
+<td>0.371</td>
+<td>tINS</td>
+<td>FF</td>
+<td>3</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/n1072_s0/F</td>
+</tr>
+<tr>
+<td>2335.316</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_regs_5_s4/I1</td>
+</tr>
+<tr>
+<td>2335.871</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>4</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_regs_5_s4/F</td>
+</tr>
+<tr>
+<td>2336.108</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_ROWS_DISP_5_s2/I1</td>
+</tr>
+<tr>
+<td>2336.678</td>
+<td>0.570</td>
+<td>tINS</td>
+<td>FR</td>
+<td>5</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_ROWS_DISP_5_s2/F</td>
+</tr>
+<tr>
+<td>2336.858</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_ROWS_DISP_1_s0/CE</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>2330.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/clk_int_3</td>
+</tr>
+<tr>
+<td>2330.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>25</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/clk_int_s0/Q</td>
+</tr>
+<tr>
+<td>2330.180</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_ROWS_DISP_1_s0/CLK</td>
+</tr>
+<tr>
+<td>2330.145</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_ROWS_DISP_1_s0</td>
+</tr>
+<tr>
+<td>2330.110</td>
+<td>-0.035</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>e203_soc_ins/u_e203_subsys_top/u_e203_subsys_main/u_e203_subsys_perips/final_top/hdmi_instance/cnt_ROWS_DISP_1_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>-0.170</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.034</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>9</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.180, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 4.233, 64.715%; route: 2.076, 31.738%; tC2Q: 0.232, 3.547%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.180, 100.000%</td></tr>
+</table>
+<br/>
+</div><!-- content -->
+</div><!-- main_wrapper -->
+</body>
+</html>
