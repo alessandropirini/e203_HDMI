@@ -4,6 +4,15 @@ This directory contains the custom RTL developed for the HDMI display peripheral
 
 The design connects a Hummingbird/e203 CPU to an HDMI output on the Tang Primer 20K board. At reset it first shows vertical color bars, then switches to a character-display mode. In character mode the CPU receives UART characters, looks up their 16x16 bitmap rows in firmware, and writes those rows into this peripheral through a memory-mapped ICB register. The RTL stores the rows in dual-port RAM and scans them out as white/black pixels on a 1280x720 HDMI display.
 
+| Project Information | Details |
+| --- | --- |
+| Contributors | Tommaso Calzolari, Alessandro Pirini |
+| Course | Intelligent Chip Design |
+| University | Tongji University |
+| Location | Shanghai, China |
+| Professor | Zhang Lei |
+| Project Period | March 2024 - July 2024 |
+
 ## Main Files
 
 - `icb_bus_HDMI.v`: memory-mapped ICB slave at `0x10014004`. Firmware writes 32-bit commands/data here, and the register output is forwarded to the HDMI IP.
